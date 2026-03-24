@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevor Maina | Full-Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #1e1a17;
+            --accent-blue: #96b1c3;
+            --accent-brown: #8d7865;
+            --accent-olive: #6c6353;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: #f3f4f6;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(141, 120, 101, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(150, 177, 195, 0.2);
+        }
+        .text-blue { color: var(--accent-blue); }
+        .bg-olive { background-color: var(--accent-olive); }
+        .border-brown { border-color: var(--accent-brown); }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e1a17 0%, #302a25 100%);
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <span class="text-2xl font-bold tracking-tighter text-blue">DEV<span class="text-white">TREV</span></span>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+                <a href="#about" class="hover:text-blue transition">About</a>
+                <a href="#experience" class="hover:text-blue transition">Experience</a>
+                <a href="#skills" class="hover:text-blue transition">Skills</a>
+                <a href="#projects" class="hover:text-blue transition">Projects</a>
+                <a href="#contact" class="hover:text-blue transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center pt-20 hero-gradient">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-blue font-mono mb-4 italic">Hi, my name is</h2>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">Trevor Maina.</h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed">
+                    A self-taught <span class="text-blue">Full-Stack Web & Mobile Developer</span> based in Kenya. 
+                    I turn complex problems into elegant, interactive interfaces.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-olive hover:opacity-80 rounded-lg font-bold transition">View Work</a>
+                    <a href="#contact" class="px-8 py-3 border border-brown hover:bg-brown/20 rounded-lg font-bold transition">Get In Touch</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 border-2 border-blue rounded-full opacity-20 animate-pulse"></div>
+                    <img src="https://github.com/trevmaina.png" alt="Trevor Maina" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-olive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-black/20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="text-blue mr-4 italic">01.</span> About Me
+            </h3>
+            <div class="glass p-8 rounded-2xl leading-loose text-gray-300">
+                <p class="mb-6">
+                    I am currently a <span class="text-white font-semibold">Bachelor of Business Information Technology student at KCA University</span>. 
+                    My passion lies in writing efficient code, whether it’s crafting seamless mobile experiences in 
+                    <span class="text-blue">Flutter, Swift, or Kotlin</span>, or developing robust web systems using <span class="text-blue">Node.js and PHP</span>.
+                </p>
+                <p>
+                    Beyond the screen, I bring <span class="text-white font-semibold">17 years of experience as a Visual Artist</span> to my work. 
+                    This artistic background allows me to approach UI/UX with a unique eye for composition and color.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="text-blue mr-4 italic">02.</span> Professional Journey
+            </h3>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-olive">
+                    <div class="absolute w-4 h-4 bg-blue rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">IT Attachment</h4>
+                    <p class="text-blue mb-2">PCEA St Andrews Church | June 2025 – Aug 2025</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2">
+                        <li>Managed local network configurations for administrative offices.</li>
+                        <li>Provided hardware/software support and performed routine system backups.</li>
+                    </ul>
+                </div>
+                <div class="relative pl-8 border-l-2 border-olive">
+                    <div class="absolute w-4 h-4 bg-olive rounded-full -left-[9px] top-1"></div>
+                    <h4 class="text-xl font-bold">Media Ministry Volunteer</h4>
+                    <p class="text-blue mb-2">PCEA St Andrews Church | 2022 – Present</p>
+                    <p class="text-gray-400 italic">Handling photography, videography, and live-streaming operations for congregational engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 glass">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12 text-center">Tech Stack</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 bg-black/40 rounded-xl text-center hover:-translate-y-2 transition">
+                    <i class="fa-brands fa-flutter text-4xl text-blue mb-4"></i>
+                    <p class="font-bold">Mobile</p>
+                    <p class="text-xs text-gray-500">Flutter, Dart, Swift, Kotlin</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl text-center hover:-translate-y-2 transition">
+                    <i class="fa-brands fa-js text-4xl text-yellow-400 mb-4"></i>
+                    <p class="font-bold">Web</p>
+                    <p class="text-xs text-gray-500">JS, React, PHP, HTML/CSS</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl text-center hover:-translate-y-2 transition">
+                    <i class="fa-solid fa-server text-4xl text-green-500 mb-4"></i>
+                    <p class="font-bold">Backend</p>
+                    <p class="text-xs text-gray-500">Node.js, Firebase, MySQL</p>
+                </div>
+                <div class="p-6 bg-black/40 rounded-xl text-center hover:-translate-y-2 transition">
+                    <i class="fa-solid fa-palette text-4xl text-purple-400 mb-4"></i>
+                    <p class="font-bold">Design</p>
+                    <p class="text-xs text-gray-500">Photoshop, Premiere, Lightroom</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+             <h3 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="text-blue mr-4 italic">03.</span> Current Projects
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl hover:border-blue transition">
+                    <h4 class="text-2xl font-bold mb-4 text-blue">Church Management System</h4>
+                    <p class="text-gray-400 mb-6">A complex platform featuring an asset barcode scanner, donation payment gateway, and newsletter manager.</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-olive/30 rounded text-xs">PHP</span>
+                        <span class="px-3 py-1 bg-olive/30 rounded text-xs">MySQL</span>
+                        <span class="px-3 py-1 bg-olive/30 rounded text-xs">Barcode API</span>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-2xl hover:border-blue transition">
+                    <h4 class="text-2xl font-bold mb-4 text-blue">Madsplat Art Store</h4>
+                    <p class="text-gray-400 mb-6">An e-commerce ecosystem for original artwork with integrated secure payment systems.</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-olive/30 rounded text-xs">Flutter</span>
+                        <span class="px-3 py-1 bg-olive/30 rounded text-xs">Firebase</span>
+                        <span class="px-3 py-1 bg-olive/30 rounded text-xs">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-black/40">
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h3 class="text-blue font-mono mb-4 italic italic">04. What's Next?</h3>
+            <h2 class="text-5xl font-bold mb-6">Get In Touch</h2>
+            <p class="text-gray-400 mb-10 leading-loose">
+                Whether you have a question or just want to say hi, my inbox is always open! I am currently looking for new opportunities in the tech space.
+            </p>
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://www.instagram.com/trevmaina" class="text-3xl hover:text-blue transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:litetrev@gmail.com" class="text-3xl hover:text-blue transition"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://wa.me/254713549546" class="text-3xl hover:text-blue transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/trevmaina" class="text-3xl hover:text-blue transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="mailto:litetrev@gmail.com" class="px-12 py-4 border-2 border-blue text-blue rounded-lg font-bold hover:bg-blue/10 transition uppercase tracking-widest text-sm">
+                Say Hello
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-600 text-sm">
+        <p>Built with ❤️ by Trevor Maina</p>
+        <p class="mt-2">Inspired by the colors of Art & Code</p>
+    </footer>
+
+</body>
+</html>
